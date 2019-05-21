@@ -14,15 +14,17 @@ class Post extends React.Component{
       thumbnailUrl:'',
       imageUrl:'',
       likes:'',
-      timestamp:'',
+      timestamp:''
     }
   }
 
   render(){
     return ( 
-    <div>top{this.state.data.map(item=>{
-      return <Contain Item={item}/>  
+    <div>top
+    {this.state.data.map(item=>{
+      return <Contain Item={item} key={item}/>  
     })}
+
 
     </div>
 

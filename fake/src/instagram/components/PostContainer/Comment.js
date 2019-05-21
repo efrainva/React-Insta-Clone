@@ -1,10 +1,12 @@
+
 import React from 'react' ;
 
 const Comment = (props) => {
   return(
     <div>
       <p>
-        
+        {props.Item.username}
+        {props.Item.text}
       </p>
     </div>
   )
@@ -12,4 +14,4 @@ const Comment = (props) => {
 
 
 
-  export default Comment;
+export default Comment;
